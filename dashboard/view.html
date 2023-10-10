@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.101.0" />
+    <title>22000075 김민수 View</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.6/examples/dashboard/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="my.css" rel="stylesheet" />
+    <script>
+      function Delete() {
+        if (confirm("정말로 삭제하시겠습니까?")) {
+          alert("삭제되었습니다.");
+          location.href = "./index.html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div style="margin: 50px 50px">
+      <div>
+        <h1 class="h2">선수 보기</h1>
+      </div>
+      <div style="margin-top: 50px">
+        <button onclick="location.href = './update.html';">수정</button>
+        <button onclick="Delete()">삭제</button>
+      </div>
+      <div style="display: flex; gap: 30px; margin: 10px 0px">
+        <div
+          style="
+            width: 140px;
+            height: 200px;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+          "
+        >
+          image
+        </div>
+        <div
+          style="display: flex; flex-direction: column; justify-content: center"
+        >
+          <div>등번호 : 7</div>
+          <div>이름 : 손흥민</div>
+          <div>포지션 : LW</div>
+          <div>팀 : 토트넘 홋스퍼FC</div>
+          <div>나이 : 30</div>
+        </div>
+      </div>
+    </div>
+    <footer style="text-align: center">KFA</footer>
+  </body>
+</html>
